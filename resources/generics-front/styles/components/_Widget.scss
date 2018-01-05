@@ -1,0 +1,168 @@
+.Widget {
+
+  &-bgWhite {
+    background-color: $color10;
+  }
+
+  &--border {
+    border-radius: 4px;
+  }
+
+  &-bgBlue {
+    background-color: $color40;
+  }
+
+  &-bgDarkBlue {
+    background-color: $color42;
+  }
+
+  &--noRadiusLeft {
+    padding: 40px 60px;
+    height: 450px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  &--noRadiusRight {
+    padding: 40px 60px;
+    height: 450px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  &--noRadiusTop {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+  }
+
+  &--noRadiusBottom {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  &-title {
+    margin: 0;
+    font-size: em(30px);
+    &--tiny {
+      font-size: em(18px);
+    }
+    &--min {
+      font-size: em(20px);
+    }
+    &--medium {
+      font-size: em(30px);
+    }
+    &--big {
+      font-size: em(40px);
+    }
+    &--color10 {
+      color: $color10;
+    }
+    &--color15 {
+      color: $color15;
+    }
+    &--color30 {
+      color: $color30;
+    }
+    &--color40 {
+      color: $color40;
+    }
+  }
+
+  &-text {
+    &--tiny {
+      font-size: em(12px);
+    }
+    &--min {
+      font-size: em(14px);
+    }
+    &--big {
+      font-size: em(18px);
+    }
+    &--color10 {
+      color: $color10;
+    }
+    &--color15 {
+      color: $color15;
+    }
+    &--color30 {
+      color: $color30;
+    }
+    &--color40 {
+      color: $color40;
+    }
+    &--count {
+      font-size: em(60px);
+    }
+  }
+
+  &-link {
+    display: inline-block;
+    &--min {
+      font-size: em(14px);
+    }
+    &--big {
+      font-size: em(18px);
+    }
+    &--color15 {
+      color: $color15;
+    }
+    &--color40 {
+      color: $color40;
+    }
+  }
+
+  &-icon {
+    position: relative;
+    color: $color40;
+    font-weight: 700;
+    cursor: pointer;
+    &:visited{
+      color: $color40;
+    }
+    &:hover {
+      color: $color30;
+    }
+  }
+
+  &-header {
+    margin-bottom: 25px;
+  }
+
+  &-padding {
+    padding: 40px 35px;
+  }
+
+  @media screen and (max-width: $screen-sm - 1) {
+    &--noRadiusLeft {
+      padding: 40px;
+      height: auto;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-left-radius: 4px !important;
+      border-bottom-right-radius: 4px !important;
+      text-align: center;
+      .Widget-title {
+        font-size: em(22px);
+      }
+      .Widget-text {
+        &--count {
+          font-size: em(32px);
+          margin: 0;
+        }
+      }
+      .Button {
+        margin-top: 10px;
+      }
+    }
+
+    &--noRadiusRight {
+      padding: 40px;
+      height: auto;
+      border-top-left-radius: 4px !important;
+      border-top-right-radius: 4px !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+  }
+}

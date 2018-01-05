@@ -1,0 +1,73 @@
+// Fonts
+$fontastic:                                     'Fontastic';
+$avenir:                                        'Avenir';
+$opensans:                                      'OpenSans';
+$dancingscript:                                 'DancingScript';
+$handlee:                                       'Handlee';
+
+// Colors
+$color10:                                       #ffffff; //branco
+$color11:                                       #f2f2f2; //cinza claro
+$color12:                                       #999999; //cinza escuro
+$color13:                                       #f3f3f3;
+$color14:                                       #808080;
+$color13:                                       #c5c5c5;
+$color15:                                       #595959;
+$color16:                                       #cecece;
+$color17:                                       #464646;
+$color20:                                       #000000; //preto
+$color30:                                       #eb2341; //verde
+$color31:										#db1634;
+$color32:                                       #fa6c26; //Azul-esverdeado
+$color33:                                       #eb2341; //verde
+$color40:                                       #292929; //azul
+$color41:                                       #1a1a1a;
+$color42:                                       #262626;
+$color43:                                       #0e2640;
+$color48:                                       #09a0b7;
+$color49:                                       #086c7b;
+$color50:                                       #f39c12;
+$color51:                                       #e67e22;
+$color52:                                       #f1c40f;
+$color53:                                       #f8ef58;
+$color60:                                       #292929;
+$facebook:                                      #3B5998;
+
+// Defaults
+$text-color:                                    $color15;
+$link-color:                                    $color30 !default;
+$link-hover-color:                              $color30 !default;
+$font-family-base:                              $opensans !default;
+$font-size-base:                                16px !default;
+
+// Navbar
+$grid-float-breakpoint:                         1199px !default;
+$grid-col-sm-container:							767px !default;
+$grid-table-sm:                                 991px !default;
+$navbar-height:                                 70px !default;
+$navbar-default-border:                         0 !default;
+$navbar-default-bg:                             $color10 !default;
+$navbar-default-color:                          $color15 !default;
+$navbar-default-link-color:                     $color15 !default;
+$navbar-default-link-hover-color:               $color30 !default;
+$navbar-default-link-active-color:              $color30 !default;
+$navbar-default-link-active-bg:                 transparent !default;
+$navbar-default-toggle-hover-bg:                transparent !default;
+$navbar-default-toggle-icon-bar-bg:             $color40 !default;
+$navbar-default-toggle-border-color:            transparent !default;
+
+// Modal
+$modal-content-bg:                              #fff !default;
+$modal-content-border-color:                    $color11 !default;
+$modal-backdrop-opacity:                        .8 !default;
+$modal-header-border-color:                     $color11 !default;
+$modal-footer-border-color:                     $modal-header-border-color !default;
+$modal-sm:                                      360px !default;
+
+// Bottom fixed icons
+$bottom-fixed-icon:								999;
+
+// Pomodoro Play icon
+$sizePomodoro:									10px !default;
+$ratioPomodoro:									1;
+$transitionTimePomodoro:						0.3s;

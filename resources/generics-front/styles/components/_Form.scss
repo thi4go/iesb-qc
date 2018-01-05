@@ -1,0 +1,170 @@
+.Form {
+  label.error {
+    font-size: 0.700em !important;
+  }
+  &-input {
+    box-shadow: none !important;
+    font-size: 0.875em;
+  }
+  &--default {
+    .Form-label {
+      font-weight: 700;
+      font-size: em(12px);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      &--checkbox {
+        text-transform: none !important;
+      }
+       list-style-type: none;
+    }
+    .Form-input, .Form-select, .Form-textarea {
+      border-radius: 3px;
+      border: 1.5px solid $color13;
+      box-shadow: none !important;
+      &:focus {
+        border-color: $color40;
+      }
+    }
+    .Form-textarea {
+      resize: none;
+    }
+    .Form-select {
+      appearance: none !important;
+      background-image: url('../images/arrowDown.svg');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 20px 20px;
+    }
+    .Form-time {
+      text-align: center;
+      font-size: em(30px);
+      font-weight: 700;
+      color: $color40;
+      line-height: 30px;
+      height: 60px;
+    }
+    .Form-radio {
+      display: inline-block;
+      margin: 0 5px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+      .Form-label {
+        cursor: pointer;
+        user-select: none;
+        text-transform: none;
+      }
+      &--onlyText {
+        input[type="radio"] {
+          display: none;
+          &:checked + .Form-label {
+            color: $color40;
+          }
+        }
+      }
+    }
+  }
+  &--pagination {
+    .Form-label {
+      font-size: em(16px);
+      font-weight: normal;
+      span {
+        font-weight: 700;
+        color: $color40;
+      }
+    }
+    .Form-input {
+      font-size: em(17px);
+      padding: 0;
+      width: 60px;
+      text-align: center;
+      border-radius: 3px;
+      border: 1.5px solid $color13;
+      box-shadow: none !important;
+      display: inline-block;
+      font-weight: 600;
+      color: $color40;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &:focus {
+        border-color: $color40;
+      }
+    }
+  }
+  &--answers {
+    font-size: em(14px);
+    .Form-label {
+      padding-left: 30px;
+      &.Form-label--correct {
+        color: $color30;
+      }
+      &.Form-label--error {
+        color: $color60;
+      }
+    }
+    .Form-radio {
+      margin-left: -30px !important;
+    }
+  }
+  &--newsletter {
+    .Form-input {
+      box-shadow: none !important;
+      border: 0 !important;
+      border-radius: 3px;
+    }
+    @media screen and (max-width: $screen-sm - 1) {
+      .Form-input {
+        margin-bottom: 15px;
+      }
+      .Button {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &--discursive {
+    .Form-paper {
+      position: relative;
+      width: 100%;
+      height: 335px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 0 40px 2px rgba($color20, .1);
+    }
+    .Form-paperContent {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      bottom: 15px;
+      left: 25px;
+      background: linear-gradient(transparent, transparent 28px, rgba($color12, .3) 28px);
+      background-size: 30px 30px;
+
+    }
+    .Form-textarea {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+      line-height: 30px;
+      padding: 0;
+      border: 0 !important;
+      outline: 0 !important;
+      background: transparent !important;
+      color: $color40;
+      font-family: $handlee;
+      font-weight: bold;
+      font-size: em(20px);
+      box-sizing: border-box;
+      z-index: 1;
+      resize: none !important;
+    }
+  }
+}

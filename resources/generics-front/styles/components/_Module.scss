@@ -1,0 +1,113 @@
+.Module {
+  &-video {
+    box-shadow: 0px 0px 50px 0px rgba($color20,.1);
+    margin-bottom: 25px;
+  }
+  &-article {
+    height: 400px;
+    background-color: $color10;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 50px 0px rgba($color20,.1);
+    margin-bottom: 5px;
+    overflow: scroll;
+    color: $color17 !important;
+    h1,h2,h3,h4,h5,h6 {
+      margin-top: 5px !important;
+      font-weight: 700 !important;
+      color: $color30 !important;
+    }
+    h1 { font-size: 1.714em !important; }
+    h2 { font-size: 1.571em !important; }
+    h3 { font-size: 1.429em !important; }
+    h4 { font-size: 1.286em !important; }
+    h5 { font-size: 1.143em !important; }
+    h6 { font-size: 1em !important; }
+    p { font-size: 0.875em; }
+    &--expanded {
+      z-index: 9998 !important;
+      height: 100% !important;
+      margin: auto !important;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+  &-scroll {
+    padding-left: 35px;
+    padding-right: 35px;
+    // position: absolute;
+  }
+  &-bar {
+    margin-bottom: 15px;
+  }
+  &-expand, &-expandClose {
+    font-size: 0.750em;
+    font-weight: 700;
+    color: $color12;
+    box-shadow: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    background-color: transparent !important;
+    &:before {
+      color: $color30;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+  }
+  &-expandClose {
+    color: $color10;
+    position: fixed;
+    right: 30px;
+    top: 15px;
+    z-index: 9999;
+  }
+  &-comments {
+    margin-top: 15px;
+    &Title {
+      font-size: 0.857em;
+      font-weight: 700;
+      color: $color30;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    &-article {
+      &--expanded {
+        padding: 50px;
+        max-width: 1050px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+    &-article {
+      &--expanded {
+        padding: 50px;
+        max-width: 968px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1112px) {
+    &-expand {
+      &Close {
+        color: $color14;
+        right: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm - 1) {
+    &-article {
+      height: 300px;
+      &--expanded {
+        padding: 40px 0;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.Lesson {
+  &-title {
+    h2{
+      font-size: em(32px);
+      font-weight: 700;
+      margin: 0;
+      font-family: $avenir;
+    }
+    h3{
+      font-size: em(14px);
+      margin: 0;
+    }
+    &--color20 {
+      color: $color20;
+    }
+    &--color30 {
+      color: $color30;
+    }
+    &--color40 {
+      color: $color40;
+    }
+  }
+}

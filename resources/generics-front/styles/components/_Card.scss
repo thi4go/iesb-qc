@@ -1,0 +1,306 @@
+.Card {
+  &--module {
+    border: 1px solid $color13;
+    border-bottom-width: 3px;
+    margin-bottom: 30px;
+    background-color: $color10;
+    .Card-info {
+      color: $color14;
+      padding: 8px 24px;
+      background-color: $color11;
+      border-bottom: 1px solid $color13;
+      overflow: hidden;
+      font-size: 0.786em;
+      .Card-title {
+        color: $color15;
+        font-size: 1.243em;
+        margin: 10;
+      }
+      .Card-title-danger{
+        color: $color60;
+        font-size: 1.243em;
+        margin: 10;
+      }
+    }
+    .Card-content {
+      padding: 22px 24px 24px;
+      .Rating {
+        margin-top: 20px;
+        font-size: 0.786em;
+      }
+    }
+    .Card-title {
+      font-size: 1.286em;
+      font-weight: 700;
+      margin-top: 0;
+      font-family: $avenir;
+    }
+    .Card-text {
+      font-size: 0.875em;
+      margin: 0;
+    }
+    @media screen and (max-width: $screen-md - 1) {
+      .Card-info {
+        .Card-titleArea {
+          float: none;
+          width: 100%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
+  &--payment{
+    //overflow: hidden;
+    min-height: 60px;
+    &Painel {
+      padding: 30px;
+      border-radius: 4px;
+      background-color: $color10;
+      &Border{
+        &Danger{
+          border: 2px solid $color60;
+        }
+        &Orange{
+          border: 2px solid $color51;
+        }
+        &Green{
+          border: 2px solid $color30;
+        }
+        &Blue{
+          border: 2px solid #016db9;
+        }
+        &Disabled{
+          border: 2px solid $color12;
+        }
+
+        border-radius: 5px;
+      }
+    }
+    .Card-title {
+      margin: 0;
+      font-size: em(30px);
+      &--danger{
+        color: $color60;
+        font-family: $opensans;
+      }
+      &--disabled{
+        color: $color12;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &Full{
+          color: $color10;
+          background-color: $color12;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 20px;
+          border-radius:4px;
+
+        }
+      }
+
+      &--blue{
+        color: $color40;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &Full{
+          color: $color10;
+          background-color: $color40;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 20px;
+          border-radius:4px;
+
+        }
+      }
+      &--green{
+        color: $color30;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &Full{
+          color: $color10;
+          background-color: $color30;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 20px;
+          border-radius:4px;
+        }
+      }
+      &--orange{
+        color: $color51;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &Full{
+          color: $color10;
+          background-color: $color51;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 20px;
+          border-radius:4px;
+        }
+      }
+      .Card-link {
+        &--play {
+          font-size: em(10px);
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: $color13;
+          text-transform: uppercase;
+          position: relative;
+          padding-left: 20px;
+          float: left;
+          &:before {
+            width: 12px;
+            height: 12px;
+            display: block;
+            position: absolute;
+            color: $color30;
+            top: 8px;
+            left: 0;
+          }
+          &:hover {
+            color: $color30;
+          }
+        }
+      }
+      @media screen and (max-width: $screen-md - 1) {
+        .Card-link {
+          &--play {
+            position: relative;
+            &:before {
+              top: 2px;
+            }
+          }
+        }
+      }
+    }
+    .Card-text {
+      font-size: 0.875em;
+      margin: 0;
+      text-align: justify;
+
+      &--danger{
+        color: $color60;
+        text-align: center;
+      }
+      &--blue{
+        padding: 23px;
+        color: $color40;
+      }
+      &--green{
+        color: $color30;
+      }
+      &--disabled{
+        color: $color12;
+      }
+    }
+  }
+
+  &--simulate {
+    overflow: hidden;
+    min-height: 60px;
+    &Painel {
+      padding: 30px;
+      border-radius: 4px;
+      background-color: $color10;
+    }
+    .Card-title {
+      margin: 0;
+      font-size: em(16px);
+      &--color30 {
+        color: $color30;
+      }
+      &--color40 {
+        color: $color40;
+      }
+      &--danger{
+        color: $color60;
+        font-family: $opensans;
+      }
+      .Card-link {
+        &--play {
+          font-size: em(10px);
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: $color13;
+          text-transform: uppercase;
+          position: relative;
+          padding-left: 20px;
+          float: left;
+          &:before {
+            width: 12px;
+            height: 12px;
+            display: block;
+            position: absolute;
+            color: $color30;
+            top: 8px;
+            left: 0;
+          }
+          &:hover {
+            color: $color30;
+          }
+        }
+      }
+      @media screen and (max-width: $screen-md - 1) {
+        .Card-link {
+          &--play {
+            position: relative;
+            &:before {
+              top: 2px;
+            }
+          }
+        }
+      }
+    }
+    .Card-link {
+      &--play {
+        font-size: em(10px);
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $color13;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 20px;
+        float: left;
+        &:before {
+          width: 12px;
+          height: 12px;
+          display: block;
+          position: absolute;
+          color: $color30;
+          top: 8px;
+          left: 0;
+        }
+        &:hover {
+          color: $color30;
+        }
+      }
+    }
+    @media screen and (max-width: $screen-md - 1) {
+      .Card-link {
+        &--play {
+          position: relative;
+          &:before {
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  &--fixedBorder {
+    border-width: 1px !important;
+  }
+  &--app{
+    padding: 40px;
+    background-color: $color11;
+    h2{
+      color: $color30;
+      font-size: 1.375em;
+      font-weight: 700;
+    }
+  }
+}

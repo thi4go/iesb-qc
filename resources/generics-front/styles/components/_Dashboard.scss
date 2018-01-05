@@ -1,0 +1,44 @@
+.Dashboard {
+  &--call {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $color40;
+    margin-bottom: 40px;
+    .Dashboard-title {
+      font-size: em(35px);
+      font-weight: 700;
+      color: $color30;
+      margin: 0 0 10px;
+    }
+    .Dashboard-text {
+      font-size: em(18px);
+      color: $color10;
+    }
+    @media screen and (max-width: $screen-sm - 1) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .Dashboard-title {
+        font-size: em(30px);
+      }
+      .Dashboard-text {
+        font-size: em(16px);
+      }
+    }
+  }
+  &--section {
+    .Dashboard-title {
+      font-size: em(22px);
+      font-weight: 700;
+      margin: 0;
+      &--color30 {
+        color: $color30;
+      }
+      &--color40 {
+        color: $color40;
+      }
+    }
+  }
+  .strikeQuestion[type="checkbox"]{
+   display:none;
+  }
+}

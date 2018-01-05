@@ -1,0 +1,38 @@
+.Rating {
+  &-title {
+    color: $color14;
+    margin-right: 5px;
+  }
+  &-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  .Icon {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    cursor: pointer;
+    color: $color14;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    &:before {
+      vertical-align: middle;
+    }
+    &.Icon--starfillBefore {
+      color: $color52;
+    }
+  }
+  @media screen and (max-width: $screen-md - 1) {
+    &--mobileBlock {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+      .Rating-stars {
+        font-size: 1.286em;
+        margin-right: 5px;
+      }
+    }
+  }
+}

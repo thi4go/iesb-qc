@@ -1,0 +1,78 @@
+.cont-margin{
+    margin-top:30px;
+}
+
+#table .first_plan_column{
+    color: #9B9B9B;
+    text-align: center;
+}
+
+#table .second_plan_column{
+    color: #AFCF02;
+    background: #F3F3F3;
+    text-align: center;
+}
+
+#table .third_plan_column{
+    color: #0F71BC;
+    text-align: center;
+}
+
+#table thead{
+    font-size: 16px;
+}
+
+#table .title_plan{
+    color: #0F71BC;
+}
+
+#table .first_column_description{
+    padding-left: 20px;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
+#table .topic_plan{
+    font-weight: bold;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
+#table .price_plan{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#table .btn_first{
+    background: #9B9B9B;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+    width: 200px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #808181;
+    text-align:"center";
+}
+
+#table .btn_second{
+    background: #AFCF02;
+    width: 200px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #91AC08;
+}
+
+#table .btn_third{
+    padding: 10px 20px;
+    width: 200px;
+    background: #0F71BC;
+    color: #fff;
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0B5E9C;
+}

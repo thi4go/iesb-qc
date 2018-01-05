@@ -1,0 +1,34 @@
+Componente - Props
+
+.ENV{
+    PIPEDRIVE_STAGEID{
+        orgId
+        Blade:register.blade.php
+        Vue:auth/register.vue
+    }
+    PIPEDRIVE_ORGID{
+        stageId
+       Blade:register.blade.php
+       Vue:auth/register.vue
+   }
+}
+
+Lang{
+    generics.php{
+        title{
+            Blade: navbar.blade.php, simpleNavbar.blade.php
+            Vue: navigation/NavBar.vue, quiz/QuizGraph.vue
+        }
+        contactEmail{
+            Blade:  payment/index.blade.php, index10x, index4x
+            Vue: marketing/Contact.vue, payment/PromoSubs.vue, PromoBoleto.vue, PromoSubs10x.vue
+        }
+        tab_objective{
+            Blade: navbar.blade.php
+        }
+        tab_discursive{
+            Blade: navbar.blade.php
+        }
+    }
+}
+Pegar ./payment do legislativo

@@ -1,0 +1,126 @@
+.row-fluid .span4 {
+    width: 31.623931623931625%;
+}
+
+.row-fluid {
+    width: 100%;
+    display: inline-block;
+}
+
+.row-fluid [class*="span"] {
+    display: block;
+    float: left;
+    min-height: 30px;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+
+
+
+.slot.Basic {
+    background-color: #6cbef0;
+}
+
+.slot.Advanced {
+    background-color: #ff8b03;
+}
+
+.plansummary .content .perks {
+    margin: 39px 0;
+    height: 80px;
+}
+
+.plansummary .content .perks.Basic {
+    margin: 60px 0 18px;
+}
+
+.plansummary {
+    margin-top: 100px;
+    min-height: 600px;
+}
+
+.plansummary .slot {
+    width: 100%;
+    margin: 0;
+    height: 20px;
+    text-align: center;
+}
+
+.plansummary .content p.ini {
+    color: #666666;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 23px;
+    height: 85px;
+}
+
+.plansummary .plancol {
+    background-color: #f8f8f8;
+    box-shadow: 0px 3px 3px -2px #cfcfcf;
+}
+
+.plansummary .content {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: solid 1px #e4e4e4;
+    position: relative;
+}
+
+.plansummary .content.content-top {
+    background-color: #ffffff;
+}
+
+.plansummary .content h2 {
+    background-color: transparent;
+    color: #6cbef0;
+    font-size: 23px;
+    line-height: 22px;
+    margin-top: 0px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+.plansummary .content h2.Basic {
+    color: #6cbef0;
+}
+
+.plansummary .content h2.Advanced {
+    color: #ff8b03;
+}
+
+.plansummary .content .btn-big {
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    width: 86%;
+    z-index: 1;
+}
+
+.plansummary .content .perks p.bottomspacing {
+    font-size: 14px;
+}
+
+.plansummary .content .perks p.plus {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.plansummary .content .perks strong span {
+    font-size: 24px;
+}
+
+.btn-p2 {
+    background: #68b325 none no-repeat;
+    color: #fff;
+    border: 1px solid #68b325;
+}
+
+.content-top {
+    border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,125 @@
+.Navbar {
+  &-list{
+    text-align: center;
+  }
+  &-sales{
+    background-image: linear-gradient(to top, transparent, #091626 20%);
+    background-color: transparent;
+    background-size: cover;
+    //background-position: 50%;
+    //background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .Navbar-link{
+      color: #a6ce38;
+    }
+    .Navbar-item:hover{
+      background-color: #a6ce38;
+      .Navbar-link{
+        color: $color43 !important;
+      }
+
+    }
+  }
+  &-active{
+    color: $color30 !important;
+  }
+  font-family: helvetica;
+  border: 0 !important;
+  &-brand {
+    margin-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    img {
+      max-height: 40px;
+    }
+  }
+  &-item {
+    &.active {
+      .Navbar-link {
+        text-decoration: underline;
+      }
+    }
+
+    &--bg {
+      padding-left: 5px !important;
+      text-align: center;
+      padding-right: 5px !important;
+      background-color: $color30;
+      .Navbar-link {
+        color: $color10 !important;
+      }
+      &Transparent{
+        font-family: helvetica;
+        text-align: center;
+        margin-top:10px;
+        border-radius: 5px;
+        border: 3px solid $color30;
+        background-color: transparent;
+        color: $color30 !important;
+        text-align: center;
+        font-weight: 700;
+        a:hover{
+          background-color: $color30;
+          color: $color43;
+        }
+
+        &.active{
+          text-decoration: none !important;
+          color: $color31;
+        }
+      }
+    }
+
+  }
+  &-avatar {
+    width: 35px;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    border-style:  solid;
+    border: 3px;
+    border-color: $color30;
+  }
+  &-link {
+    position: relative;
+    color: $color15;
+    font-weight: 700;
+    &--buy {
+      color: $color10;
+    }
+    span {
+      color: $color30;
+    }
+    &--user {
+      padding-left: 60px !important;
+      font-weight: normal;
+      &:hover {
+        border-bottom: 4px;
+        border-color: $color30;
+        span {
+          color: $color40;
+        }
+      }
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+
+
+  }
+  @media screen and (max-width: $grid-float-breakpoint) {
+    .Navbar-sales{
+      padding-top: 30px;
+    }
+    &-link {
+      &--user {
+        margin-bottom: 20px !important;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.Countdown {
+  text-align: center;
+  background-color: $color40;
+  color: $color10;
+  padding: 15px 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  &-title {
+    margin-top: 0;
+    font-size: 0.688em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &-divisor {
+    font-size: 1.375em;
+    font-weight: 700;
+    height: 100%;
+  }
+  &-counter {
+    display: inline-block;
+    margin: 0 auto;
+    width: 195px;
+  }
+  &-day, &-hour, &-minute, &-second, &-divisor {
+    float: left;
+    display: inline-block;
+    margin: 0 3px;
+  }
+  &-day {
+    margin: 0 12px 0 0;
+  }
+  &-number {
+    display: block;
+    font-size: 1.725em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+  &-text {
+    font-size: 0.750em;
+  }
+}

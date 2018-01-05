@@ -1,0 +1,45 @@
+.Cycle{
+  .pomodoroList{
+    padding-top: 3px;
+    li{
+      display: inline;
+      list-style-type: none;
+      padding-right: 2px;
+    }
+  }
+  .Table{
+    .Status{
+      text-align: center;
+    }
+    td{
+      text-align: left !important;
+    }
+  }
+  &-landing{
+    .table {
+      border-style: solid;
+      border-width: 1px;
+      border-color: $color30;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top:5px;
+      .item {
+        border-top: 1px;
+      }
+    }
+  }
+  .collapse{
+    border-style: solid;
+    border-color: $color30;
+    border-width: 1px;
+    padding:20px;
+  }
+  .link-collapse{
+    text-decoration: underline !important;
+  }
+  .btn-half {
+    display: inline-block;
+    width: 15em;
+  }
+
+}

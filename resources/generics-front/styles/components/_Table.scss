@@ -1,0 +1,165 @@
+.Table {
+  overflow: hidden;
+  width: 100%;
+  font-size: em(12px);
+
+  &-danger {
+    color: $color60 !important;
+  }
+
+
+  tr {
+    border-top: 1px solid $color13;
+    border-bottom: 1px solid $color13;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: block;
+    color: $color12;
+    &:first-child {
+      padding-top: 20px;
+    }
+
+    &:last-child {
+      padding-bottom: 20px;
+    }
+
+    &:before {
+      font-weight: bold;
+      width: 40%;
+      display: inline-block;
+
+      @media (min-width: $screen-md) {
+
+        display: none;
+      }
+    }
+  }
+
+  th, td {
+    margin: .5em 0;
+    @media (min-width: $screen-md) {
+      padding: 1em !important;
+    }
+  }
+
+  th, td {
+    text-align: left;
+    @media (min-width: $screen-md) {
+
+      display: table-cell;
+      padding: .25em .5em;
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.SuggestedTable {
+  overflow: hidden;
+  font-size: em(12px);
+
+  &-danger {
+    color: $color60 !important;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: block;
+    color: $color12;
+  }
+
+  th, td {
+    @media (min-width: $screen-md) {
+      padding-right: 1em !important;
+    }
+  }
+
+  th, td {
+    text-align: left;
+    @media (min-width: $screen-md) {
+
+      display: table-cell;
+    }
+  }
+}
+
+
+.DiscursiveTable {
+  overflow: hidden;
+  width: 100%;
+  font-size: em(12px);
+
+  &-danger {
+    color: $color60 !important;
+  }
+
+
+  tr {
+    border-top: 1px solid $color13;
+    border-bottom: 1px solid $color13;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: block;
+    color: $color12;
+    &:first-child {
+      padding-top: 20px;
+    }
+
+    &:last-child {
+      padding-bottom: 20px;
+    }
+
+    &:before {
+      font-weight: bold;
+      width: 40%;
+      display: inline-block;
+      content: attr(data-th) ":";
+
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+
+  th, td {
+    margin: .5em 0;
+    @media (min-width: $screen-md) {
+      padding: 1em !important;
+    }
+  }
+
+  th, td {
+    text-align: left;
+    @media (min-width: $screen-md) {
+
+      display: table-cell;
+      padding: .25em .5em;
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

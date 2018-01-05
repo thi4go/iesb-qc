@@ -1,0 +1,49 @@
+.Box {
+  &--detail {
+    position: relative;
+    padding-left: 100px;
+    .Box-title {
+      margin-top: 0;
+      color: $color40;
+      font-family: $avenir;
+      font-size: 1em;
+      margin-bottom: 5px;
+      &:before {
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: block;
+        color: $color48;
+        font-size: 4.375em;
+      }
+      &.Icon--shieldBefore {
+        &:before {
+          color: $color30;
+          font-size: 4.575em;
+        }
+      }
+    }
+    .Box-text {
+      color: $color12;
+    }
+  }
+  @media screen and (max-width: $screen-sm - 1) {
+    &--detail {
+      margin-bottom: 30px;
+      .Box-title {
+        &:before {
+          font-size: 3.275em;
+          top: 5px;
+          left: 25px;
+        }
+        &.Icon--shieldBefore {
+          &:before {
+            font-size: 3.575em;
+          }
+        }
+      }
+    }
+  }
+}

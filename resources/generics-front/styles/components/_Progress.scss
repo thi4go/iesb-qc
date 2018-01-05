@@ -1,0 +1,35 @@
+.Progress {
+  &-legend {
+    color: $color13;
+    font-weight: 700;
+    font-size: em(11px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &-bar {
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    &--color10 {
+      background-color: $color10;
+    }
+    &--color13 {
+      background-color: rgba($color13, .5);
+    }
+  }
+  &-loading {
+    transition: width 1.5s ease-in-out;
+    height: 100%;
+    &--color30 {
+      background-color: $color30;
+    }
+    &--color40 {
+      background-color: $color40;
+    }
+  }
+  &-count {
+    font-size: em(12px);
+    margin: 0;
+  }
+}

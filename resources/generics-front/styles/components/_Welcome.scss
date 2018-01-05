@@ -1,0 +1,26 @@
+.Welcome {
+  margin-bottom: 30px;
+  &-content {
+    background-image: url(../images/bgModule.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 140px 80px 100px;
+  }
+  &-title {
+    margin: 0;
+    color: $color30;
+    font-weight: 700;
+    font-family: $avenir;
+  }
+  @media screen and (max-width: $screen-sm - 1) {
+    overflow: hidden;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &-content {
+      padding: 80px 40px;
+    }
+  }
+}

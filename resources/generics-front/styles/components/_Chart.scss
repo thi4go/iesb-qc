@@ -1,0 +1,29 @@
+.Chart {
+  &--medium {
+    height: 300px;
+  }
+  &-nav {
+    margin-bottom: 20px;
+    font-weight: 700;
+    padding: 0;
+    list-style: none;
+    &Item {
+      display: inline-block;
+      &.active {
+        .Button {
+          background-color: $color30 !important;
+          border-color: $color30 !important;
+          color: $color10 !important;
+        }
+      }
+    }
+  }
+  &-container {
+    &.active {
+      @extend .show;
+    }
+    &:not(.active) {
+      @extend .hidden;
+    }
+  }
+}

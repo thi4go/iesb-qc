@@ -1,0 +1,13 @@
+.BoxResponsive {
+  display: table;
+  width: 100%;
+  /* fix overflow */
+  table-layout: fixed;
+  @media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+}
+

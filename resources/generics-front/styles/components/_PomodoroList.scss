@@ -1,0 +1,41 @@
+.PomodoroList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  &-item {
+    display: inline-block;
+    padding: 0;
+    padding-right:.3em;
+    animation-duration: 0.50s;
+    animation-fill-mode: both;
+    animation-name: zoomIn;
+  }
+  &-icon {
+    font-size: em(24px);
+    &--success {
+      color: $color30;
+    }
+    &--danger {
+      color: $color60;
+    }
+    &--extra {
+      color: $color32;
+    }
+  }
+}
+
+
+
+
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

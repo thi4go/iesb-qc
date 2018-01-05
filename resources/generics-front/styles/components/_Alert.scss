@@ -1,0 +1,12 @@
+.Alert {
+  width: 100%;
+  padding: 15px;
+  &--javascript {
+    color: $color10;
+    background-color: $color40;
+    text-align: center;
+    a {
+      font-weight: 700;
+    }
+  }
+}

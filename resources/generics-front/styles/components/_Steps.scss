@@ -1,0 +1,67 @@
+.Steps {
+  width: 100%;
+  background-color: $color10;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &-link {
+    color: $color40;
+    display: inline-block;
+    font-size: em(18px);
+    padding: 15px 0 15px 90px;
+    position: relative;
+    line-height: 20px;
+    &--checked {
+      pointer-events: none;
+      cursor: default;
+      color: $color13 !important;
+      &:before {
+        border-color: $color13 !important;
+      }
+      span {
+        text-decoration: line-through !important;
+      }
+    }
+    &:before {
+      font-size: em(30px);
+      line-height: 62px;
+      width: 70px;
+      height: 70px;
+      display: block;
+      border: 3px solid $color40;
+      border-radius: 100%;
+      overflow: hidden;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:hover {
+      &:before {
+        border-color: $color30;
+      }
+    }
+  }
+  @media screen and (max-width: $screen-sm - 1) {
+    text-align: center;
+    &-link {
+      font-weight: 700;
+      font-size: em(11px);
+      padding: 0 0 0 35px;
+      line-height: 14px;
+      padding: 0;
+      &:before {
+        margin-bottom: 10px;
+        top: auto;
+        left: auto;
+        position: relative;
+        display: block;
+        font-size: em(30px);
+        line-height: 42px;
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 10px auto;
+        border: 2px solid $color40;
+      }
+    }
+  }
+}

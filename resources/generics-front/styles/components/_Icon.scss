@@ -1,0 +1,67 @@
+[class^="Icon--"],
+[class*=" Icon--"] {
+  &:before, &:after {
+    font-family: $fontastic !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+$icons: (
+  'facebook':           'a',
+  'twitter':            'b',
+  'google':             'c',
+  'linkedin':           'd',
+  'instagram':          'e',
+  'star':               'f',
+  'starfill':           'g',
+  'arrowDown':          'h',
+  'arrowLeft':          'i',
+  'arrowRight':         'j',
+  'arrowUp':            'k',
+  'playCircle':         'l',
+  'fileText':           'm',
+  'expand':             'n',
+  'bars':               'o',
+  'caretDown':          'p',
+  'caretUp':            'q',
+  'chat':               'r',
+  'shield':             's',
+  'hourglass':          't',
+  'email':              'u',
+  'play':               'v',
+  'undo':               'w',
+  'check':              'x',
+  'close':              'y',
+  'edit':               'z',
+  'padnote':            'A',
+  'profile':            'B',
+  'warning':            'C',
+  'like':               'D',
+  'unlike':             'E',
+  'pomodoro':           'F'
+);
+
+// Icon--name[After|Before]
+.Icon {
+  &.Icon--block {
+    &:after, &:before {
+      display: block;
+    }
+  }
+  @each $key, $value in $icons {
+    &.Icon-- {
+      &#{$key} {
+        &After:after, &Before:before {
+          content: $value;
+        }
+      }
+    }
+  }
+}

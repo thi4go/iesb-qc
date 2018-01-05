@@ -1,0 +1,210 @@
+/* Variables */
+@import "variables";
+
+/* Configs */
+@import "configs/bootstrap";
+@import "configs/bootstrap_offcanvas";
+@import "configs/bootstrap_toggle";
+@import "configs/fonts";
+@import "configs/functions";
+@import "configs/ionrange";
+@import "configs/magnific";
+@import "configs/swiper";
+
+/* Common Styles */
+@import "common";
+
+/* Components */
+@import "components/Accordion";
+@import "components/Alert";
+@import "components/AlertBox";
+@import "components/Avatar";
+@import "components/Banner";
+@import "components/BasePlans";
+@import "components/Box";
+@import "components/BoxResponsive";
+@import "components/Brand";
+@import "components/Breadcrumb";
+@import "components/Button";
+@import "components/Card";
+@import "components/Chart";
+@import "components/Consult";
+@import "components/Countdown";
+@import "components/Counter";
+@import "components/Cycle";
+@import "components/Dashboard";
+@import "components/Feedback";
+@import "components/Footer";
+@import "components/Form";
+@import "components/Glyph";
+@import "components/Header";
+@import "components/Icon";
+@import "components/Lesson";
+@import "components/Lightbox";
+@import "components/List";
+@import "components/Modal";
+@import "components/Module";
+@import "components/Modules";
+@import "components/Navbar";
+@import "components/Payment";
+@import "components/Plans";
+@import "components/PomodoroList";
+@import "components/Popover";
+@import "components/Progress";
+@import "components/Rating";
+@import "components/Resolution";
+@import "components/Sales";
+@import "components/ScheduleTimer";
+@import "components/Section";
+@import "components/Sidebar";
+@import "components/Slider";
+@import "components/Status";
+@import "components/Steps";
+@import "components/Table";
+@import "components/Terms";
+@import "components/Timeline";
+@import "components/VideoList";
+@import "components/Welcome";
+@import "components/Widget";
+@import "components/Wrapper";
+
+/* Helpers */
+@import "helpers/margin";
+@import "helpers/padding";
+@import "helpers/utilities";
+
+#quizContainer{
+  list-style-type: none;
+}
+//alert notification
+.quiz-notification{
+  display: none;
+}
+.option{
+  margin:15px;
+  font-size:18px;
+  color:#FFFFFF;
+  padding:2px;
+  padding-left:10px;
+  border: 2px solid white;
+  cursor:pointer;
+  background-color:#3399FF;
+}
+
+.marginTopQuiz{
+  margin-top:45px;
+}
+
+#question{
+  font-family: 'Lato', sans-serif;
+  font-size:12pt;
+}
+.timer-sidebar{
+  width:8em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -8em;
+  z-index: 1000;
+  display: block;
+  padding: 22px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  border-right: 1px solid #eee;
+}
+
+.question-item-wrapper{
+  margin-bottom: 1em;
+}
+
+#clock{
+  color:white;
+  font-size:1.5em;
+
+}
+.question-item {
+  & {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    background: $color10;
+    color: $color20;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    font-weight: normal;
+  }
+  &--regular{
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    background: $color10;
+    color: $color20;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+  }
+  &--marked {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #3aa02e;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+  }
+  &--marked-wrong {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: #c32020;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+  }
+}
+
+.question-item:hover{
+  background-color: $color16;
+}
+.question-item-wrapper input[type="radio"]:checked + .question-item {
+  background: $color16;
+}
+.question-item-wrapper input[type="radio"] {
+  display:none;
+}
+.finished-loading{
+  display: none;
+}
+.fade-enter-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
+.fade-leave-active {
+  transition: all 0.5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.fade-question-enter-active {
+  transition: opacity .5s
+}
+.fade-question-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
+.fade-question-leave-active {
+  transition: all 0.5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.question-item:active {
+  background-color: $color16;
+}
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active for <2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}

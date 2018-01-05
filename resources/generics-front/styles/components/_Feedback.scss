@@ -1,0 +1,33 @@
+.Feedback{
+  &-title{
+    h2{
+      font-size: 30px;
+      color: $color40;
+    }
+    h3{
+      font-size:20px;
+      color: $color42;
+    }
+  }
+  &-header{
+    h2 {
+      font-size: em(24px);
+      font-weight: 700;
+      margin: 0;
+    }
+    &--color30 {
+      color: $color30;
+    }
+    &--color40 {
+      color: $color40;
+    }
+  }
+  &-chance{
+
+    font-size:14px;
+    color: $color17;
+    strong{
+      color: $color30;
+    }
+  }
+}

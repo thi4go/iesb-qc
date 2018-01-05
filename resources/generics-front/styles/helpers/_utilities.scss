@@ -1,0 +1,22 @@
+// Utilities
+.u {
+  @media screen and (min-width: $screen-md) {
+    &-fixedVideoDesktop {
+      padding-bottom: 0;
+      height: 465px;
+    }
+  }
+  &-bold {
+    font-weight: 700;
+  }
+  // V Align
+  &-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+  &-vAlign {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

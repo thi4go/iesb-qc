@@ -1,0 +1,20 @@
+.ey_local_data
+.sass-cache
+.idea
+/.idea
+.phpintel
+/.phpintel
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+/.env
+# Arquivos gerados pelas receitas ou usuários
+/frontend/node_modules/
+/frontend/dist/
+.DS_Store
+
+public/css
+public/js
+public/mix-manifest.json

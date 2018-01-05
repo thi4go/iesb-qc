@@ -1,0 +1,84 @@
+.Consult{
+  font-family: 'Open Sans';
+
+
+  &-result{
+    h2{
+      color: $color42;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h4{
+      color: $color42;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    carousel{
+      background-color: transparent;
+    }
+
+    .baloon {
+      background: $color30;
+      border-radius: 15px;
+      width:auto;
+      height:160px;
+
+      position: relative;
+
+      &:after {
+
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $color30;
+
+        bottom: -20px;
+        left: 20%;
+      }
+      p{
+        margin: auto;
+        padding: 20px;
+        color: $color10;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    .author{
+      color: $color42;
+      font-size: 20px;
+      text-align: left;
+      padding-top: 30px;
+      a{
+        color: $color30;
+      }
+    }
+  }
+  
+  @media screen and (max-width: $grid-col-sm-container) {
+    &-result{
+      h2{
+        margin-bottom:10px;
+        font-size: 30px;
+      }
+      .baloon{
+        height:160px;
+      }
+    }
+    &-faq{
+      p{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+}
+fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}

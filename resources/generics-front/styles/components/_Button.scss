@@ -1,0 +1,300 @@
+.Button {
+  display: inline-block;
+  &--min {
+    font-size: em(10px) !important;
+  }
+  &--tiny {
+    padding: 4px 10px 3px !important;
+
+
+  }
+
+  &--disabled {
+    color: grey;
+    background-color: $color10;
+    border-color: $color10;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  &--popover {
+    font-size: em(10px);
+    outline: none !important;
+    background-color: rgba($color12, .7) !important;
+    color: $color10 !important;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none !important;
+  }
+  &--voidBorder, &--default {
+    &, &:focus {
+      background-color: transparent;
+      border-width: 2px;
+      border-style: solid;
+      text-transform: uppercase;
+      font-size: 0.750em;
+      font-weight: 700;
+      padding: 10px 20px;
+      color: $color10;
+      border-radius: 3px;
+      letter-spacing: 2px;
+    }
+    &.Icon {
+      &:before {
+        font-size: em(20px);
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
+  }
+  &--default {
+    &White {
+      &, &:focus {
+        color: $color30;
+        background-color: $color10;
+        border-color: $color10;
+      }
+      &:hover {
+        background-color: $color30;
+        color: $color10;
+        border-color: $color30;
+      }
+    }
+    &Disabled {
+      &, &:focus {
+        color: $color10;
+        background-color: $color12;
+        border-color: $color12;
+      }
+    }
+    &WhiteBlue {
+      &, &:focus {
+        color: $color40;
+        background-color: $color10;
+        border-color: $color10;
+      }
+      &:hover {
+        background-color: $color10;
+        color: $color40;
+        border-color: $color10;
+      }
+    }
+    &Danger {
+      &, &:focus {
+        color: $color10;
+        background-color: $color60;
+        border-color: $color60;
+      }
+      &:hover {
+        background-color: $color10;
+        color: $color60;
+        border-color: $color60;
+      }
+    }
+    &Warning {
+      &, &:focus {
+        color: $color10;
+        background-color: $color50;
+        border-color: $color50;
+      }
+      &:hover {
+        background-color: $color10;
+        color: $color50;
+        border-color: $color50;
+      }
+    }
+    &Yellow {
+      &, &:focus {
+        color: $color10;
+        background-color: $color52;
+        border-color: $color52;
+      }
+      &:hover {
+        background-color: $color10;
+        color: $color52;
+        border-color: $color52;
+      }
+    }
+    &Blue {
+      &, &:focus {
+        color: $color10;
+        background-color: $color40;
+        border-color: $color40;
+      }
+      &:hover {
+        background-color: $color10;
+        color: $color40;
+        border-color: $color10;
+      }
+    }
+    &BlueFull {
+      &, &:focus {
+        color: $color10;
+        background-color: $color40;
+        border-color: $color40;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $color40;
+        border-color: $color40;
+      }
+    }
+    &Facebook {
+      &, &:focus {
+        color: $color10;
+        background-color: $facebook;
+        border-color: $facebook;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $facebook;
+        border-color: $facebook;
+      }
+      margin-top: 10px;
+    }
+    &Green {
+      &, &:focus {
+        color: $color10;
+        background-color: $color30;
+        border-color: $color30;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $color30;
+        border-color: $color30;
+      }
+    }
+    &GreenBlue {
+      &, &:focus {
+        color: $color10;
+        background-color: $color30;
+        border-color: $color30;
+      }
+      &:hover {
+        background-color: $color40;
+        color: $color10;
+        border-color: $color40;
+      }
+    }
+    &GreenWhite {
+      &, &:focus {
+        color: $color10;
+        background-color: $color30;
+        border-color: $color30;
+      }
+      &:hover {
+        background-color: $color10;
+        color: $color30;
+        border-color: $color10;
+      }
+    }
+    &Orange {
+      &, &:focus {
+        color: $color10;
+        background-color: $color51;
+        border-color: $color51;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $color51;
+        border-color: $color51;
+      }
+    }
+    &GreenTransparent{
+      text-align: center;
+      background-color: transparent;
+      padding: 30px;
+      color: $color30;
+      border-color: $color30;
+      border-width: 3px;
+      font-size: 30px;
+      border-radius: 5px;
+      &:hover{
+        font-size: 40px;
+        border-width: 5px;
+      }
+    }
+  }
+  &--voidBorder {
+    &White {
+      &, &:focus {
+        border-color: $color10;
+      }
+      &:hover {
+        background-color: $color30;
+        color: $color10;
+        border-color: $color30;
+      }
+    }
+    &Blue {
+      &, &:focus {
+        border-color: $color40;
+      }
+      &:hover {
+        background-color: $color40;
+        color: $color10;
+      }
+    }
+  }
+  &--3D {
+    &, &:focus {
+      cursor: pointer !important;
+      transition: all 0.1s;
+      border-radius: 6px;
+      padding: 7px 20px 10px 20px;
+      color: $color10 !important;
+      text-decoration: none !important;
+      text-align: center;
+      box-shadow: none !important;
+    }
+    &Blue {
+      &, &:focus {
+        background-color: $color48;
+        border-bottom: 4px solid $color49;
+      }
+      &:active {
+        border-bottom: 1px solid $color49;
+      }
+    }
+    &Orange {
+      &, &:focus {
+        background-color: $color50;
+        border-bottom: 4px solid $color51;
+      }
+      &:active {
+        border-bottom: 1px solid $color51;
+      }
+    }
+    &:active {
+      transform: translate(0px,5px);
+    }
+  }
+  &--module {
+    color: $color10 !important;
+    font-weight: 700;
+    padding: 10px 16px;
+  }
+  &--report {
+    &, &:focus {
+      border-width: 2px;
+      border-style: solid;
+      font-size: em(10px);
+      font-weight: 700;
+      padding: 2px 8px;
+      color: $color10 !important;
+      border-radius: 3px;
+      background-color: $color52 !important;
+      border-color: $color52 !important;
+    }
+
+    &:after {
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    &:hover, &:focus {
+      background-color: $color51 !important;
+      color: $color10 !important;
+      border-color: $color51 !important;
+    }
+  }
+}

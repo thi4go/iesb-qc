@@ -1,0 +1,318 @@
+.Sales{
+
+	&-title{
+		color: $color10;
+		h1{
+			padding-top: 140px;
+			font-size: 50px;
+			font-weight: bold;
+			padding-bottom: 40px;
+		}
+	}
+	&-sectionBlue{
+		&--icon{
+			color: $color30;
+			font-size: 20em;
+			text-align: center;
+		}
+		&--text{
+			.title{
+
+				font-size:50px;
+				color: $color10;
+
+			}
+			padding-top: 4%;
+			font-size: 16px;
+			color: $color10;
+		}
+		h2{
+			font-size: 45px;
+			padding-top: 25px;
+			color: $color30;
+		}
+		h3{
+			
+			font-size: 60px;
+			padding-top: 10px;
+			font-weight: bold;
+			color: $color10;
+			text-align: center;
+		}
+		h4{
+			font-size: 20px;
+			padding-top: 20px;
+			color: $color30;
+		}
+		p{
+			b{
+				color: $color30;
+				text-align: center;
+			}
+			
+			color: $color10;
+			text-align: justify;
+			-moz-text-align-last: center;
+			text-align-last: center;
+			
+		}
+
+		.diferencial{
+			&-principal{
+				font-size: 35px;
+				padding-top: 10px;
+				padding-bottom: 20px;
+				font-weight: bold;
+				color: $color30;
+				text-align: center;
+			}
+			&-item{
+				text-align: center;
+				font-weight: bold;
+				color: $color30;
+				padding-bottom: 10px;
+			}
+			.fa{
+				display: block;
+				padding-bottom: 10px;
+				text-align: center;
+				color: $color30;
+			}
+
+		}
+
+		.cropped{
+			font-size: 30px;
+			padding-top: 10px;
+			color: $color17;
+			text-decoration: line-through;
+		}
+
+		.panel{
+
+			background-color: transparent;
+
+			&-heading{
+				background-color: transparent;
+				border-width: 0px;
+				border-color: transparent;
+			}
+			&-body{
+				border-color: transparent;
+				color: $color10;
+			}
+			&-collapse{
+				border-top: 0px;
+				border-color: transparent;
+			}
+			&-title{
+				.fa{
+					font-size: 20px;
+				}
+			}
+		}
+		a{
+			&:hover{
+				text-decoration: underline !important;
+			}
+		}
+	}
+
+	&-sectionWhite{
+		padding-top: -30px;
+		&--icon{
+			color: $color42;
+			font-size: 30px;
+			text-align: center;
+		}
+
+		h2{
+			font-size: 50px;
+			color: $color42;
+		}
+		h4{
+			font-size: 20px;
+			margin-left: 10px;
+			color: $color40;
+			font-style: bold;
+			text-align: left;
+		}
+		p{
+			b{
+				color: $color17;
+			}
+
+			margin: 0px 70px 70px 10px;
+			color: $color15;
+			text-align: justify;
+			-moz-text-align-last: center;
+			text-align-last: center;
+		}
+		.depoiments{
+			border-style: solid;
+			border-color: $color31;
+			border-width: 1px;
+			-webkit-border-radius:4px;
+			-moz-border-radius:4px;
+			border-radius:4px;
+			background-color: $color11;
+			margin-bottom: 10px;
+			.quote{
+				display: inline-block;
+				font-style: italic;
+				padding:10px;
+			}
+			img{
+				margin-top: 20px;
+				margin-bottom: 20px;
+				background-color: $color10;
+				display: inline-block;
+
+			}
+			.name{
+				padding: 10px;
+				color: $color43;
+				border-color: inherit;
+				border-style: solid;
+				border-width: 1px 0px 0px 0px;
+				font-size: 80%;
+			}
+		}
+		.number{
+
+			h1{
+				text-align: right;
+				margin-left: 50px;
+				margin-right: 10px;
+				padding-top: 80px;
+				font-size: 80px;
+				color: $color30;
+				transform: translate(-50%, -50%);
+
+			}
+		}
+		.panel-body{
+			text-align: justify;
+		}
+
+		
+	}
+
+	&-sectionPayment{
+
+		a{
+			&:hover{
+				text-decoration: underline !important;
+			}
+		}
+		.panel-title{
+			color: $color40;
+		}
+	}
+	@media screen and (max-width: $grid-col-sm-container) {
+		&-title{
+			h1{
+				padding-top: 75px;
+				font-size: 30px;
+				font-weight: bold;
+			}
+		}
+
+		&-sectionBlue{
+			&--icon{
+				color: $color30;
+				font-size: 30px;
+				text-align: center;
+			}
+			&--text{
+				.title{
+					color: $color31;
+					font-size:30px;
+					text-align: center;
+				}
+				text-align: justify;
+				-moz-text-align-last: center;
+				text-align-last: center;
+
+			}
+
+			h2{
+				font-size: 30px;
+				padding-top: 30px;
+			}
+			h4{
+				font-size: 20px;
+				padding-top: 20px;
+				color: $color30;
+			}
+			p{
+				b{
+					color: $color30;
+				}
+				
+				color: $color10;
+				text-align: justify;
+				-moz-text-align-last: center;
+				text-align-last: center;
+			}
+			.price{
+				color: $color30;
+				text-align: left;
+			}
+		}
+		.diferencial{
+			&-principal{
+				font-size: 35px;
+				text-align: center;
+			}
+			&-item{
+				text-align: center;
+			}
+		}
+
+		.number{
+
+			h1{
+				text-align: center;
+				margin-left: 20px;
+				margin-right: 10px;
+				padding-top: 80px;
+				font-size: 50px;
+				color: $color30;
+				transform: translate(-50%, -50%);
+
+			}
+		}
+
+		&-sectionWhite{
+			h2{
+				font-size: 30px;
+				color: $color42;
+			}
+			p{
+				margin: 0px 20px 50px 20px;
+			}
+			.depoiments{
+				margin-bottom: 20px;
+			}
+		}
+		&-sectionPayment{
+			padding-left: 0px;
+			padding-right: 0px;
+			margin-bottom: 40px;
+		}
+	}
+
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	color: $color30;
+}
+
+.carousel-indicators li {
+	border-color: $color30;
+}
+
+.carousel-indicators li.active {
+	background-color: $color30;
+}

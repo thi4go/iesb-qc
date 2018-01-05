@@ -1,0 +1,57 @@
+.Terms{
+	text-align: center;
+	&--content{
+		border-radius: 5px;
+		height: 650px;
+	}
+
+	&--title{
+		position: relative;
+		font-size: 40px;
+		color: $color40;
+		margin: 10px 10px 10px 10px;
+		text-align: left;
+		padding-top: 10px;
+
+	}
+	&--text{
+		overflow-y: scroll;
+		position: absolute;
+		font: $color20;
+		background-color: $color10;
+		text-align: justify;
+		padding-left: 10px;
+		width:95%;
+		height:640px;
+		h4{
+			font-weight: bold;
+		}
+	}
+	&--agreeSection{
+		&-content{
+			left: 0px;
+			color: $color12;
+			text-align: left;
+			@media screen and (max-width: 587px){
+				padding-bottom: 20px;
+				text-align: center;
+			}
+			@media screen and (max-width: 400px){
+				padding-bottom: 25px;
+
+			}
+
+
+		}
+		bottom:50px;
+		padding-left: 40px;
+		padding-right: 40px;
+		position: static;
+		// @media screen and (max-width: 767px){
+		// 	padding-bottom: 20px;
+		// 	text-align: center;
+		// }
+
+	}
+
+}

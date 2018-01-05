@@ -1,0 +1,33 @@
+.Resolution {
+  &--color10 {
+    color: $color10 !important;
+  }
+
+  p {
+    font-size: em(14px) !important;
+  }
+
+  &-avaliate {
+    margin-top: 40px;
+    &Link {
+      font-weight: 700;
+      color: $color10;
+      display: inline-block;
+      margin: 0 5px;
+      &:after, &:before {
+        font-size: em(30px);
+        vertical-align: middle;
+      }
+      &.Icon--likeAfter {
+        &:after {
+          margin-left: 10px;
+        }
+      }
+      &.Icon--unlikeBefore {
+        &:before {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.Accordion {
+  &-content {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  &-panel {
+    overflow: hidden;
+    border-radius: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid $color11 !important;
+  }
+
+  &-title {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  &-link{
+    font-size: em(10px);
+    font-weight: 700;
+    position: relative;
+    display: block;
+
+    &:hover, &:focus{
+      text-decoration: underline !important;
+    }
+  }
+}

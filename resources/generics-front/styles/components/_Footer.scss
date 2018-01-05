@@ -1,0 +1,38 @@
+.Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: $color17;
+  padding: 15px 0;
+  color: $color10;
+  &-link {
+    color: $color10;
+    margin-right: 15px;
+    &:hover {
+      color: $color30;
+    }
+    &.Icon {
+      &:after {
+        vertical-align: middle;
+        margin-left: 10px;
+        color: $color48;
+      }
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 0.875em;
+  }
+  &-contact {
+    text-align: right;
+  }
+  @media screen and (max-width: $screen-sm - 1) {
+    height: 85px;
+    text-align: center !important;
+    &-contact {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.Status {
+  &-label {
+    padding: 4px 10px 3px !important;
+    font-size: em(10px) !important;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 2px;
+    color: $color10;
+  }
+
+  &--green {
+    background-color: $color30;
+  }
+  &--grey {
+    background-color: $color12;
+  }
+}

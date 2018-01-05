@@ -1,0 +1,29 @@
+.Modules{
+  padding-top: 150px;
+
+  &-link{
+    margin-bottom: 10px;
+    display: block;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: $color11;
+    color: $color14;
+    font-family: Helvetica;
+    font-size: 0.875em;
+    &:hover{
+      background-color: $color30;
+      color: $color10;
+    }
+  }
+
+  &-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: $color14;
+    font-size: 1.625em;
+    &:hover{
+      color: $color13;
+    }
+  }
+}

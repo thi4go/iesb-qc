@@ -1,0 +1,73 @@
+// Fontastic
+@font-face {
+  font-family: $fontastic;
+  src: url('../fonts/fontastic/exame-da-oab-site.eot');
+  src: url('../fonts/fontastic/exame-da-oab-site.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/fontastic/exame-da-oab-site.woff') format('woff'),
+       url('../fonts/fontastic/exame-da-oab-site.ttf') format('truetype'),
+       url('../fonts/fontastic/exame-da-oab-site.svg#exame-da-oab-site') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Avenir
+@font-face {
+  font-family: $avenir;
+  src: url('../fonts/avenir/avenir-lt-medium.eot');
+  src: url('../fonts/avenir/avenir-lt-medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/avenir/avenir-lt-medium.woff') format('woff'),
+       url('../fonts/avenir/avenir-lt-medium.ttf') format('truetype'),
+       url('../fonts/avenir/avenir-lt-medium.svg#avenirltmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $avenir;
+  src: url('../fonts/avenir/avenir-lt-black.eot');
+  src: url('../fonts/avenir/avenir-lt-black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/avenir/avenir-lt-black.woff') format('woff'),
+       url('../fonts/avenir/avenir-lt-black.ttf') format('truetype'),
+       url('../fonts/avenir/avenir-lt-black.svg#avenirltblack') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// OpenSans
+@font-face {
+  font-family: $opensans;
+  src: url('../fonts/opensans/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans/opensans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/opensans/opensans-regular-webfont.woff') format('woff'),
+       url('../fonts/opensans/opensans-regular-webfont.ttf') format('truetype'),
+       url('../fonts/opensans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $opensans;
+  src: url('../fonts/opensans/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans/opensans-bold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans/opensans-bold-webfont.woff') format('woff'),
+       url('../fonts/opensans/opensans-bold-webfont.ttf') format('truetype'),
+       url('../fonts/opensans/opensans-bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Dancing Script
+@font-face {
+  font-family: $handlee;
+  src: url('../fonts/handlee/handlee-regular-webfont.eot');
+  src: url('../fonts/handlee/handlee-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/handlee/handlee-regular-webfont.woff2') format('woff2'),
+       url('../fonts/handlee/handlee-regular-webfont.woff') format('woff'),
+       url('../fonts/handlee/handlee-regular-webfont.ttf') format('truetype'),
+       url('../fonts/handlee/handlee-regular-webfont.svg#handlee-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
